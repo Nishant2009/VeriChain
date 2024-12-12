@@ -1,7 +1,9 @@
 # Install cloudflared
 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
 sudo dpkg -i cloudflared.deb
-rm -rf cloudflared.deb
+cloudflared update
+
+ls -a
 
 cloudflared tunnel --url 127.0.0.1:8080 --logfile cloudflared_log.txt >/dev/null 2>&1 &
 
