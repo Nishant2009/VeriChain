@@ -2,4 +2,3 @@ Flask
 web3
 python-dotenv
 google-generativeai
-sqlite3
